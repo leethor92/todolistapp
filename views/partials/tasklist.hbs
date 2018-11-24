@@ -1,0 +1,16 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Task</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each todolist.tasks}}
+      <tr>
+        <td>
+          {{item}}
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

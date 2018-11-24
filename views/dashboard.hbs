@@ -1,0 +1,25 @@
+{{> menu id="dashboard"}}
+
+{{#each todolists}}
+  <section class="ui segment">
+    <h2 class="ui header">
+      {{title}}
+    </h2>
+    <table class="ui table">
+      <thead>
+        <tr>
+          <th>Task</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each tasks}}
+          <tr>
+            <td>
+              {{item}}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </section>
+{{/each}}
