@@ -1,0 +1,32 @@
+{
+  "todolistCollection": [
+    {
+      "title": "Groceries",
+      "tasks": [
+        {
+          "item": "Buy Milk"
+        },
+        {
+          "item": "Buy food"
+        },
+        {
+          "item": "Buy drink"
+        }
+      ]
+    },
+    {
+      "title": "Monday",
+      "tasks": [
+        {
+          "item": "Wake-up!!"
+        },
+        {
+          "item": "Eat Breakfast"
+        },
+        {
+          "item": "Goto work"
+        }
+      ]
+    }
+  ]
+}

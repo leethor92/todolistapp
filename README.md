@@ -1,4 +1,4 @@
-# todolistapp
-Basic todo list API
+Welcome to the Playlist 1
+=========================
 
-Built using javascript, express, json handlebars & symantic UI
+Version 1 of the Playlist application
