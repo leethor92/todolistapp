@@ -1,16 +1,17 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const todolistCollection = require('../models/todolist-store.js');
+const todolistStore = require('../models/todolist-store');
 
+//variable to render dashboard that displays all todo lists
 const dashboard = {
   index(request, response) {
     logger.info('dashboard rendering');
     const viewData = {
       title: 'Todolist Dashboard',
-      todolists: todolistCollection,
+      todolists: todolistStore.getAllTodolists(),
     };
-    logger.info('about to render', todolistCollection);
+    logger.info('about to render', todolistStore.getAllTodolists());
     response.render('dashboard', viewData);
   },
 };

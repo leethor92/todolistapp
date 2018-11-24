@@ -5,21 +5,6 @@
     <h2 class="ui header">
       {{title}}
     </h2>
-    <table class="ui table">
-      <thead>
-        <tr>
-          <th>Task</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each tasks}}
-          <tr>
-            <td>
-              {{item}}
-            </td>
-          </tr>
-        {{/each}}
-      </tbody>
-    </table>
+    <a href="/todolist/{{id}}"> View </a>
   </section>
 {{/each}}

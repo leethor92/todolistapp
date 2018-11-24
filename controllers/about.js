@@ -2,6 +2,7 @@
 
 const logger = require('../utils/logger');
 
+//renders about info & view
 const about = {
   index(request, response) {
     logger.info('about rendering');
