@@ -1,30 +1,52 @@
 {
   "todolistCollection": [
     {
+      "id" : "01",
       "title": "Groceries",
       "tasks": [
         {
-          "item": "Buy Milk"
+          "id" : "04",
+          "item": "Buy milk"
         },
         {
+          "id" : "05",
           "item": "Buy food"
         },
         {
-          "item": "Buy drink"
+          "id" : "06",
+          "item": "Buy water"
         }
       ]
     },
     {
+      "id" : "02",
       "title": "Monday",
       "tasks": [
         {
-          "item": "Wake-up!!"
+          "id" : "07",
+          "item": "Wake up"
         },
         {
-          "item": "Eat Breakfast"
+          "id" : "08",
+          "item": "Eat brekkie"
         },
         {
-          "item": "Goto work"
+          "id" : "09",
+          "item": "goto work"
+        }
+      ]
+    },
+    {
+      "id" : "03",
+      "title": "Lazy day",
+      "tasks": [
+        {
+          "id" : "10",
+          "item": "relax"
+        },
+        {
+          "id" : "11",
+          "item": "Relax again!"
         }
       ]
     }

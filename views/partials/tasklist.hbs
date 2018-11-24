@@ -2,6 +2,7 @@
   <thead>
     <tr>
       <th>Task</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -9,6 +10,11 @@
       <tr>
         <td>
           {{item}}
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href="/todolist/{{../todolist.id}}/deletetask/{{id}}" class="ui tiny red button">Delete Task</a>
         </td>
       </tr>
     {{/each}}
