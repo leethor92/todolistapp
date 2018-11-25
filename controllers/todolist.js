@@ -19,7 +19,7 @@ const todolist = {
     const todolistId = request.params.id;
     const taskId = request.params.taskid;
     logger.debug(`Deleting Task ${taskId} from Todolist ${todolistId}`);
-    todolistStore.removeSong(todolistId, taskId);
+    todolistStore.removeTask(todolistId, taskId);
     response.redirect('/todolist/' + todolistId);
   },
 //variable to add a task
@@ -30,6 +30,7 @@ const todolist = {
       id: uuid(),
       item: request.body.item,
     };
+    logger.debug('New Task = ' , newTask)
     todolistStore.addTask(todolistId, newTask);
     response.redirect('/todolist/' + todolistId);
   },
