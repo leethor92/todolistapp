@@ -9,8 +9,12 @@ const todolist = require('./controllers/todolist.js');
 
 router.get('/', dashboard.index);
 router.get('/dashboard', dashboard.index);
+router.get('/dashboard/deletetodolist/:id', dashboard.deleteTodolist);
+router.post('/dashboard/addtodolist', dashboard.addTodolist);
+
 router.get('/about', about.index);
 router.get('/todolist/:id', todolist.index);
 router.get('/todolist/:id/deletetask/:taskid', todolist.deleteTask);
+router.post('/todolist/:id/addtask', todolist.addTask);
 
 module.exports = router;
