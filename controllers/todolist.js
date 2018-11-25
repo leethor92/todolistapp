@@ -2,8 +2,8 @@
 
 const logger = require('../utils/logger');
 const todolistStore = require('../models/todolist-store');
-
-//renders the todolist via it's id
+const uuid = require('uuid');
+//variable renders todolist
 const todolist = {
   index(request, response) {
     const todolistId = request.params.id;
@@ -14,13 +14,23 @@ const todolist = {
     };
     response.render('todolist', viewData);
   },
-
-  //allows for the deletion of a task by it's id
+//variable to delete a task
   deleteTask(request, response) {
     const todolistId = request.params.id;
     const taskId = request.params.taskid;
     logger.debug(`Deleting Task ${taskId} from Todolist ${todolistId}`);
-    todolistStore.removeTask(todolistId, taskId);
+    todolistStore.removeSong(todolistId, taskId);
+    response.redirect('/todolist/' + todolistId);
+  },
+//variable to add a task
+  addTask(request, response) {
+    const todolistId = request.params.id;
+    const todolist = todolistStore.getTodolist(todolistId);
+    const newTask = {
+      id: uuid(),
+      item: request.body.item,
+    };
+    todolistStore.addTask(todolistId, newTask);
     response.redirect('/todolist/' + todolistId);
   },
 };
