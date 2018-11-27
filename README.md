@@ -8,3 +8,4 @@ Express & node was used as the framework.
 
 Users can sign upp to the app, add a todolist & add tasks to this todolist.
 They can also delete todolist's & delete tasks that are undesirable, there is user authentication in use so users need to login to the application
+User can filter task to indicate completion.
