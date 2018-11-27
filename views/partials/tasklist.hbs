@@ -16,6 +16,12 @@
         <td>
           <a href="/todolist/{{../todolist.id}}/deletetask/{{id}}" class="ui icon button">
             <i class = "icon trash"></i>
+          <a href="/todolist/{{../todolist.id}}//toggletask/{{id}}" class="ui toggle checkbox"></a>
+        </td>
+        <td>
+         <div class="ui toggle checkbox">
+          <input type="checkbox" onToggle ="complete">
+          <label>Click if task is completed</label>
         </td>
       </tr>
     {{/each}}
